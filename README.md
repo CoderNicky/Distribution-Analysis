@@ -29,6 +29,9 @@ The interpretation of Q-Q plots:
 -**Deviation from Normality:** Any deviations from the straight line indicate departures from normality. If the points deviate upward, it suggests heavier tails than a normal distribution. If they deviate downward, it suggests lighter tails.
 
 -**S-shaped Curve:** If the points create an S-shaped curve, it indicates skewness in the data. The direction of the S-shape tells you about the direction of skewness.
+- Positive Skewness (Right-Skewed): If the S-shaped curve goes upwards to the right, it indicates positive skewness. This means that the right tail of the distribution is longer or fatter than the left, and the bulk of the values is concentrated on the left side.
+- Negative Skewness (Left-Skewed): If the S-shaped curve goes upwards to the left, it indicates negative skewness. This means that the left tail of the distribution is longer or fatter than the right, and the bulk of the values is concentrated on the right side.
+
 
 -**Outliers:** Points that deviate significantly from the line could be outliers.
 
