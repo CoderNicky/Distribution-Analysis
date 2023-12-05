@@ -2,12 +2,11 @@
 
 ## Overview
 
-This repository contains Python scripts for pricing options.
+This repository contains Python scripts for analysing data distributions.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [](#)
 - [Scripts](#scripts)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
@@ -22,7 +21,7 @@ This repository contains Python scripts for pricing options.
 
 ## Scripts
 
-The interpretation of Q-Q plots:
+The interpretation of Quartile-Quartile plots:
 
 -**Perfectly Normal Distribution:** If the points in the Q-Q plot lie perfectly along a straight line (the red line in your case), it suggests that the sample distribution is very close to a normal distribution.
 
@@ -71,6 +70,12 @@ This project is licensed under the MIT License.
 
 
 ## References
+
+[Q-Q Plots](https://en.wikipedia.org/wiki/Q%E2%80%93Q_plot)
+
+[Shapiro–Wilk test](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test) 
+[Anderson–Darling test](https://en.wikipedia.org/wiki/Anderson%E2%80%93Darling_test)
+[Kolmogorov–Smirnov test](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test)
 
 [The Central Limit Theorem](https://www.investopedia.com/terms/c/central_limit_theorem.asp)
 [Standard Error](https://www.investopedia.com/terms/s/standard-error.asp)
