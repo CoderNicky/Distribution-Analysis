@@ -1,81 +1,69 @@
-# Distribution-Analysis
+# Distribution Analysis Script
 
 ## Overview
 
-This repository contains Python scripts for analysing data distributions.
+This script investigates the distribution of financial data, exploring possible deviations from the normal distribution assumption. It is designed to provide insights into the statistical properties of return data for informed financial analysis.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Scripts](#scripts)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Performance Metrics](#performance-metrics)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [Acknowledgments](#Acknowledgments)
-- [License](#license)
-- [Author](#author)
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Requirements](#requirements)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributors](#contributors)
+7. [License](#license)
 
-## Introduction
+## 1. Introduction
 
-## Scripts
+As an essential aspect of financial analysis, understanding the distribution of data is crucial for risk management, investment strategy, and decision-making. This script facilitates the exploration of distribution characteristics, including normality tests, Q-Q plots, and skewness/kurtosis analysis.
 
-The interpretation of Quartile-Quartile plots:
+## 2. Features
 
--**Perfectly Normal Distribution:** If the points in the Q-Q plot lie perfectly along a straight line (the red line in your case), it suggests that the sample distribution is very close to a normal distribution.
+- **Normality Tests:** Perform prominent normality tests (Shapiro-Wilk, Anderson-Darling, Kolmogorov-Smirnov) on stock returns data.
+- **Q-Q Plots:** Generate Quantile-Quantile plots to visually assess the normality of the data distribution.
+- **Skewness and Kurtosis Analysis:** Evaluate skewness and kurtosis, providing insights into the symmetry and tail characteristics of the distribution.
 
--**Deviation from Normality:** Any deviations from the straight line indicate departures from normality. If the points deviate upward, it suggests heavier tails than a normal distribution. If they deviate downward, it suggests lighter tails.
+## 3. Requirements
 
--**S-shaped Curve:** If the points create an S-shaped curve, it indicates skewness in the data. The direction of the S-shape tells you about the direction of skewness.
-- Positive Skewness (Right-Skewed): If the S-shaped curve goes upwards to the right, it indicates positive skewness. This means that the right tail of the distribution is longer or fatter than the left, and the bulk of the values is concentrated on the left side.
-- Negative Skewness (Left-Skewed): If the S-shaped curve goes upwards to the left, it indicates negative skewness. This means that the left tail of the distribution is longer or fatter than the right, and the bulk of the values is concentrated on the right side.
+- Python 3
+- Required Python packages: pandas, numpy, yfinance, matplotlib, seaborn, statsmodels, scipy
 
+## 4. Installation
 
--**Outliers:** Points that deviate significantly from the line could be outliers.
+Clone the repository and install the required dependencies:
 
-In summary, a Q-Q plot provides a visual assessment of whether a dataset follows a particular theoretical distribution (in this case, the normal distribution). The closer the points are to the straight line, the closer the data is to the specified distribution.
+```bash
+git clone [repository_url]
+cd distribution-analysis-script
+pip install -r requirements.txt
+```
 
-## Getting Started
+## 5. Usage
 
-1. Clone the repository:
+1. Install the required libraries:
 
-   ```bash
-   git clone
+    ```bash
+    pip install pandas yfinance matplotlib
+    ```
 
-## Usage
- 
-Explore the scripts and customize parameters as needed for your investment strategy. Run the scripts to generate buy signals.
+2. Run the script:
 
-## Performance Metrics
+    ```bash
+    python distribution_analysis_script.py
+    ```
 
-## Dependencies
+3. Use the configure function to input asset tickers and date ranges, as well as hypothesis test parameter values.
 
-Python 3
-Required Python packages (listed in requirements.txt)
+4. View the generated distribution plots.
 
-## Contributing
-
-Feel free to contribute by opening issues, suggesting enhancements, or submitting pull requests. Your feedback and contributions are highly appreciated.
-
-## Acknowledgments
-
-## License
-
-This project is licensed under the MIT License.
-
-## Author
+  
+## 6. Contributors
 
 [Nicky Taylor](https://github.com/CoderNicky)
 
+Contributions are welcome! Feel free to open issues or submit pull requests to enhance the functionality and usability of the script.
 
-## References
+## 7. License
 
-[Q-Q Plots](https://en.wikipedia.org/wiki/Q%E2%80%93Q_plot)
-
-[Shapiro–Wilk test](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test) 
-[Anderson–Darling test](https://en.wikipedia.org/wiki/Anderson%E2%80%93Darling_test)
-[Kolmogorov–Smirnov test](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test)
-
-[The Central Limit Theorem](https://www.investopedia.com/terms/c/central_limit_theorem.asp)
-[Standard Error](https://www.investopedia.com/terms/s/standard-error.asp)
+This script is licensed under the [MIT License](LICENSE)
