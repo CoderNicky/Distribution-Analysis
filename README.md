@@ -6,9 +6,9 @@ This script investigates the distribution of financial data, exploring possible 
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Requirements](#requirements)
+1. [Introduction](#1. introduction)
+2. [Features](#2. features)
+3. [Requirements](#3. requirements)
 4. [Installation](#installation)
 5. [Usage](#usage)
 6. [Contributors](#contributors)
